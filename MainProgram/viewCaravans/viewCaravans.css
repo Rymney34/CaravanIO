@@ -1,0 +1,277 @@
+body{
+    background-color: #FDF6F6;
+    margin: 0px;
+    height: 115vh;
+}
+h1,h2,h3,h4,h5,h6 {
+}
+/*control over all headings*/
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+}
+#header{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background:#012035 ;
+    box-shadow: 0 5px 15px #949393;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/*header background color and spacing etc*/
+#navbar {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white ;
+}
+/*this is the header list , and the options for them*/
+#navbar li a:hover,
+#navbar li a:active {
+    -webkit-text-decoration-line:  underline;
+    text-decoration: underline #B76E79 15%;
+    text-underline-style: thick;
+    transition: 0.3s;
+}
+
+/*hovering over the navigation bar at the top causes red unline and whilst its active also causes a red underline*/
+#header img {
+    border-radius: 50%;
+    height: auto;
+}
+.sub-menu-wrap {
+    margin-top: 3%;
+    position: absolute;
+    right: 5%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+/*position and proterties of submenu*/
+.sub-menu-wrap.open-menu{
+    max-height: 600px;
+
+}
+/*size of sub menu*/
+.sub-menu {
+    background: white;
+    top: 12%;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10%;
+    border: #012035 1px solid;
+    /*drop down menu background color and position*/
+
+}
+.user-info {
+    display: flex;
+    align-items: center;
+
+
+}/*drop down */
+
+.user-info img {
+    border-radius: 50%;
+
+} /*change image for drop down */
+.user-info h2{
+    padding: 15px;
+
+
+}  /* change text in drop down menu*/
+.sub-menu hr {
+color: #012035;
+}
+/*adjust the line in the drop down menu */
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 12px 0;
+}
+/*allows us to change the sub menu words allignment and color */
+.sub-menu-link p {
+    width: 100%;
+    color: #012035;
+
+}
+/*control of the arrow in the drop down */
+.sub-menu-link img {
+    padding: 2%;
+    align-items: center;
+    width: 35px;
+}
+/*image properties in drop down*/
+.sub-menu-link img{
+    width: 20px;
+    background: lightgrey;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10%;
+}
+/*changes sub menu icon properties*/
+.sub-menu-link span {
+    font-size: 22px;
+    transition: 0.5s;
+}
+/*changes arrow in drop down properties*/
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+/*hover properties for arrows*/
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+main{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+h1{
+    text-align: center;
+}
+
+.view-caravan-base{ 
+    width: 90%;
+    height: 99%;
+
+}
+
+.first-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.first-box {
+    background-color: #B76E79;
+    width: 33%; 
+    
+    height: auto;
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    display: grid;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: flex-start;
+}
+.second-box{
+    background-color:#B76E79;
+    width: 48%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #9b5b64;
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    flex: 0 0 auto; 
+    margin-left: 0;
+    height: 200px;
+    width: 300px;
+}
+
+.image img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+b{
+    color: white;
+    font-size: 25px;
+}
+p{
+    color: white;
+    font-size: 16px;
+}
+
+.caravan-info {
+    margin-bottom: 0;
+}
+.caravan-title{
+    margin-bottom: 2%;
+    font-size: 45px;
+}
+@media (max-width: 768px) {
+    .first-box {
+        width: 100%;
+    }
+}
+
+/* block responsable for footer */
+footer{
+    width: 100%;
+    position: absolute;
+    background-color: #012035;
+    height: 160px;
+    margin-bottom: 0;
+
+}
+/*this is for the icon size*/
+.footer-row .logo{
+    height: auto ;
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 2%;
+}
+/*logo in footer*/
+footer p {
+    padding:0 0 0 10px ;
+    margin-top: 0 ;
+    color: #FDF6F6;
+
+}
+footer h2{
+    color: #FDF6F6;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 0 0 10px;
+    text-decoration: underline 2px #B76E79 ;
+}
+.footer-row{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 33%;
+}
+.col i{
+    color: #FDF6F6;
+    padding: 0 0 0 10px;
+    margin: auto;
+}
+.col h2{
+    position: relative;
+    margin-top: 30px;
+}
+.col i ,
+.col h2{
+    padding-left: 180px;
+}

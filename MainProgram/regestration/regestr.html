@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <link rel="stylesheet" href="regest.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title></title>
+</head>
+
+<body >
+
+              
+    <!-- Logo  & header-->
+    <section id="header">
+        <a href="/MainProgram/index.php"><img class = "logo-img" src="img/logo.jpg" width = "80" height="auto" class="logo"></a>
+
+        <h1 id="header-heading">User Regestration</h1>
+    
+    </section>
+
+<main >
+
+    
+  
+<!-- Regestration page-->
+<div class = "backGround1">
+    <form class = "form" action="sign-up.php" method="POST" autocomplete="off" >
+         <!-- div block with input and label-->
+          <div class = "form-input-item-text">
+            <label class = "form-input-item-label" for="first-name">First Name *</label>
+            <input class = "form-input-item" id = "first-name" placeholder="Name" type="text" name="first_name" minlength="2" required>
+          </div>
+          <div class = "form-input-item-text">
+            <label class = "form-input-item-label" for="first-name">Last Name *</label>
+            <input class = "form-input-item" id = "last-name" placeholder="Surname" type="text" name="last_name" minlength="2" required>
+          </div>
+          <div class = "form-input-item-text">
+            <label class = "form-input-item-label" for="first-name">Username *</label>
+            <input class = "form-input-item" id = "User-name" placeholder="Username" type="text" name="username" minlength="5" required>
+          </div>
+            <div class = "form-input-item-text">
+              <label class = "form-input-item-label" for="first-name">Email *</label>
+              <input class = "form-input-item" id = "eemail" placeholder="Email@something.com" type="text" name="email" minlength="10" required>
+          </div>
+          <div class = "form-input-item-text class-short">
+              
+              <label class = "form-input-item-label" for="first-name">Password *</label>
+              <input class = "form-input-item pass" id = "Password-field" placeholder="Password" type="password" name="password" minlength="8" required >
+              <i class="fa fa-eye togglePassword"></i>
+          </div>
+          <div class = "form-input-item-text class-short">
+
+              <label class = "form-input-item-label" for="first-name">Confirm Password*</label>
+              <input class = "form-input-item pass" id = "Conf-Password-field" placeholder="Repeat Password" type="password" minlength="8" required>
+               
+              <i class="fa fa-eye togglePassword"> 
+              </i>
+
+          </div>
+        
+        
+        <!-- Buttons div block -->
+    
+      <div class="button-forms">
+        <a href="/MainProgram/loginFormFolder/login.php">
+          <button type="button" class="button2" >Cancel</button>
+        </a>
+          <button  class="button1" id="button1">Register</button>
+          
+          
+          <div class = modal ></div>
+          
+      </div>
+    </form>
+     <!-- Caravan Image-->
+    <div class = "backGround2">
+        <div class = "right-image">
+            <img class = "caravan-img"src = "regCaravan.png" alt="picture of caravan">
+        </div>
+        <div class = "form-leftBlock">
+        </div>
+    </div>
+</div>
+
+
+</main>
+
+
+<script src="./register1.js"></script>
+
+
+</body>
+
+</html>

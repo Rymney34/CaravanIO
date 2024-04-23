@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/cef40a4c0b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sign-up.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Sign Up</title>
+</head>
+<body>
+<section id="header">
+  <a href="#"><img src="img/logo.jpg" width = "80" height="auto" class="logo"></a>
+  <div>
+    <ul id="navbar">
+      <li><a class="active" href="/MainProgram/index.php">Home</a></li>
+      <li><a href="/MainProgram/viewCaravans/viewcaravans.php">View Caravans</a></li>
+      <li><a href="/MainProgram/aboutUs/aboutus.php">About Us</a></li>
+      <li><a href="/MainProgram/loginFormFolder/login.php">Sign Up/Sign in</a></li>
+    </ul>
+
+    <!--        header buttons in a div list -->
+    
+  </div>
+  <script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+      subMenu.classList.toggle("open-menu");
+    }
+
+  </script>
+</section>
+<style> .popup{
+  padding-top: 2%;
+  padding-bottom: 43%;
+  margin-left: 5%;
+}
+.popup a:hover{
+  transition: 0.4s;
+  text-decoration: underline #B76E79;
+}
+</style>
+<div class="popup">
+  <h1>Sign Up</h1>
+  <p>Sign Up Sucessful You can now <a href="/MainProgram/loginFormFolder/login.php">Log In</a>.</p>
+<!--  to edit the login button-->
+</div>
+
+
+  
+  <footer>
+    <div class="footer-row">
+        <div class="col">
+            <img src="img/logo.jpg" class = "logo">
+            <p>For all of your caravan needs please do not hesitate<br>
+                to contact our carvan owners as they would love <br>
+                to help you with arranging your perfect holiday.</p>
+        </div>
+        <div class="contact">
+            <h2> Our Contact Details:</h2>
+            <p>
+                123 Cardiff Road &nbsp;&nbsp;&nbsp; Phone Number: 0712345678<br>
+                Cardiff &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: Caravan.io@gmail.com <br>
+                CF12 1AA <br>
+            </p>
+            
+
+        </div>
+      
+        <div class="col">
+            <h2>Social Media:</h2>
+            <i class="fa-brands fa-facebook">Caravan.io</i><br>
+            <i class="fa-brands fa-x-twitter">Caravan.io</i><br>
+            <i class="fa-brands fa-instagram">Caravan.io</i>
+        </div>
+        <div class="col"></div>
+
+    </div>
+</footer>
+</body>
+</html>

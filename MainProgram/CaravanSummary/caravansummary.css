@@ -1,0 +1,263 @@
+body{
+     background-color: #FDF6F6;
+     margin: 0;
+     padding: 0;
+    height: 100%;
+ }
+h1,h2,h3,h4,h5,h6 {
+}
+/*control over all headings*/
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+}
+#header{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background:#012035 ;
+    box-shadow: 0 5px 15px #949393;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/*header background color and spacing etc*/
+#navbar {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white ;
+}
+/*this is the header list , and the options for them*/
+#navbar li a:hover,
+#navbar li a:active {
+    -webkit-text-decoration-line:  underline;
+    text-decoration: underline #B76E79 15%;
+    text-underline-style: thick;
+    transition: 0.3s;
+}
+
+/*hovering over the navigation bar at the top causes red unline and whilst its active also causes a red underline*/
+#header img {
+    border-radius: 50%;
+
+}
+.sub-menu-wrap {
+    margin-top: 3%;
+    position: absolute;
+    right: 5%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+/*position and proterties of submenu*/
+.sub-menu-wrap.open-menu{
+    max-height: 450px;
+
+}
+/*size of sub menu*/
+.sub-menu {
+    background: white;
+    top: 12%;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10%;
+    border: #012035 1px solid;
+    /*drop down menu background color and position*/
+
+}
+.user-info {
+    display: flex;
+    align-items: center;
+
+
+}/*drop down */
+
+.user-info img {
+    border-radius: 50%;
+
+} /*change image for drop down */
+.user-info h2{
+    padding: 15px;
+
+
+}  /* change text in drop down menu*/
+.sub-menu hr {
+
+}
+/*adjust the line in the drop down menu */
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 12px 0;
+}
+/*allows us to change the sub menu words allignment and color */
+.sub-menu-link p {
+    width: 100%;
+
+}
+/*control of the arrow in the drop down */
+.sub-menu-link img {
+    padding: 2%;
+    align-items: center;
+}
+/*image properties in drop down*/
+.sub-menu-link img{
+    width: 35px;
+    background: lightgrey;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10%;
+}
+/*changes sub menu icon properties*/
+.sub-menu-link span {
+    font-size: 22px;
+    transition: 0.5s;
+}
+/*changes arrow in drop down properties*/
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+/*hover properties for arrows*/
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+footer{
+    width: 100%;
+    position: relative;
+    background-color: #012035;
+    height: 160px;
+    bottom: 0;
+}
+/*this is for the icon size*/
+.footer-row .logo{
+    height: auto ;
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 2%;
+}
+/*logo in footer*/
+footer p {
+    padding:0 0 0 10px ;
+    margin-top: 0 ;
+    color: #FDF6F6;
+
+}
+footer h2{
+    color: #FDF6F6;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 0 0 10px;
+    text-decoration: underline 2px #B76E79 ;
+}
+.footer-row{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 33%;
+}
+.col i{
+    color: #FDF6F6;
+    padding: 0 0 0 10px;
+    margin: auto;
+}
+.col h2{
+    position: relative;
+    margin-top: 30px;
+}
+.col i ,
+.col h2{
+    padding-left: 180px;
+}
+h1{
+   text-align: center;
+}
+.caravan_summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    margin-bottom: 2%;
+    padding-bottom: 5%;
+
+}
+/*this adjusts the entire summary section*/
+.summaryimage {
+    flex: 1;
+    padding-right: 5%;
+    margin-left: 3%;
+    margin-top: 5%;
+
+}
+.summaryimage img{
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    align-content: center;
+}
+/*adjusts the image on the left*/
+.details{
+    height: 100%;
+    flex: 1;
+    margin-right: 3%;
+    margin-top: 5%;
+
+}
+/*adjusts the details on the right */
+.details h2{
+    margin: 0;
+}
+.title{
+    background-color: #949393;
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+}
+.price{
+    margin-top: 5%;
+    background-color: #949393;
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+}
+.Description{
+    margin-top:5%;
+    background-color: #949393;
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+}
+.Contact{
+    margin-top: 5%;
+    background-color: #949393;
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+}
+.Sleeps{
+    margin-top: 5%;
+    background-color: #949393;
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+}
+.Location{
+    margin-top: 5%;
+    background-color: #949393;
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+    margin-bottom: 5vw;
+}

@@ -1,0 +1,252 @@
+html{
+  font-size: 1rem;
+}
+/* colour change for hyperlinks */
+a{
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+*{
+  font-family: sans-serif;
+}
+
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background: linear-gradient(90deg, #012035, #b76e79, #fdf6f6);
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+}
+/* style to make the gradient */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 70%;
+  width: 80%;
+
+
+}
+
+h1{
+  text-align: center;
+  margin: 0 0 30%  0;
+  font-size: 2vw;
+}
+
+
+
+/* div loginForm where the picture a fields/inputs locate  */
+.loginForm{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fdf6f6;
+  border-radius: 10px;
+  border: solid 1px rgb(222, 148, 148);
+  -webkit-box-shadow: 23px 22px 21px 3px rgba(2, 0, 36,0.80);
+  -moz-box-shadow: 23px 22px 21px 3px rgba(2, 0, 36,0.80);
+  box-shadow: 23px 22px 21px 3px rgba(2, 0, 36,0.80);
+
+
+}
+
+/* pucture div */
+.picture-form{
+  width: 60%;
+  height:100%;
+}
+
+img{
+  border-radius: 10px 0 0 10px;
+  width:100%;
+  height:100%;
+}
+
+/* div clock with id=img */
+#img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+}
+/* div block where inputs and buttons declared*/
+.all-func-loginForm{
+  position: relative;
+  margin-right: 10%;
+  width: 20%;
+
+
+}
+
+input{
+  border-radius: 10px;
+  width: 100%;
+  height: 3.5vh;
+  border: 1px solid rgb(211, 210, 210);
+  
+}
+
+/* username label div */
+.form-label{
+  font-size: 1.5vw;
+}
+/* password label div */
+.form-password-label{
+  font-size: 1.5vw;
+}
+/*username input */
+.form-input-username{
+  padding: 2%;
+  text-size-adjust: auto;
+  font-size: 1.2vw;
+}
+/* password input */
+.form-input-password{
+  padding: 2%;
+  font-size: 1.2vw;
+}
+/* div block for username label and input  */
+.form-username{
+  display: flex;
+  flex-direction: column;
+  margin: 0% 0% 10% 0%;
+}
+
+/* div block for  password label and input*/
+.form-password{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+
+}
+
+/* forget your password link */
+.hyper-link-form1{
+  font-size: 0.8vw;
+  margin: 0% 0% 10% 0%;
+}
+
+/* login button*/
+.button-1{
+  border-radius: 10px;
+  font-size: 1.2vw;
+  background-color:#b76e79;
+  color: white;
+  width: 50%;
+  height: 4vh;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin: 0% 0% 15% 0%;
+  border: 1px solid black;
+}
+
+
+
+
+/* link for dont have acoount? create one*/
+.hyper-link-form2{
+  font-weight: bold;
+  font-size: 0.8vw;
+  gap: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+/* style for forget form */
+#forgotForm{
+  display: flex;
+  justify-content: center;
+  
+}
+/* style for forget form block */
+#forgot-form-inside{
+  width: 40%;
+  margin-right: 0;
+}
+/* style for forget form labels */
+.label1{
+  margin-bottom: 1em;
+}
+/* style for forget form labels */
+.label2{
+  margin-top: 1em;
+}
+
+/* forgot form buttons */
+.forgot-button{
+  color: white;
+  font-size: 1.5vh;
+  background-color:#b76e79;
+  margin-top: 2em;
+  width: 50%;
+  height: 3em;
+  border-radius: 10px;
+}
+
+/* password show icon */
+i {
+  z-index: 2;
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 16%;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: block;
+  height: 2vh;
+  width: 2vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+/* password show icon  hover */
+i:hover{
+  scale: 1.0;
+  transition: 0.5s ease-in-out;
+}
+.fa{
+
+}
+
+/* urls to images */
+.fa-eye{
+  background-image: url(./img/visablity-on.png);
+}
+/* urls to image */
+.fa-eye-slash{
+  background-image: url(./img/visablity-off.png);
+}
+

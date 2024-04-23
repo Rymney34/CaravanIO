@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="sign-up.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Sign Up</title>
+</head>
+<body>
+<section id="header">
+  <a href="#"><img src="img/logo.jpg" width = "80" height="auto" class="logo"></a>
+  <div>
+    <ul id="navbar">
+      <li><a class="active" href ="index.html">Home</a></li>
+      <li><a href ="viewcaravans.html">View Caravans</a></li>
+      <li><a href ="aboutus.html">About Us</a></li>
+      <li><img src="img/userprofile.webp" onclick="toggleMenu()" width="35" height="auto"></a> </li>
+
+    </ul>
+
+    <!--        header buttons in a div list -->
+    <div class ="sub-menu-wrap" id = "subMenu">
+      <div class = "sub-menu">
+        <div class = "user-info">
+          <img src="img/userprofile.webp"  width="35" height="auto">
+          <h2>Omar Elsharoud</h2>
+        </div>
+        <hr>
+
+        <a href="#" class="sub-menu-link">
+          <img src="img/userprofile.webp" width="17" height="auto">
+          <p>Edit Profile</p>
+          <span>></span>
+        </a>
+        <a href="#" class="sub-menu-link">
+          <img src="img/add.png" width="17" height="auto">
+          <p>Add Listing</p>
+          <span>></span>
+        </a>
+        <a href="#" class="sub-menu-link">
+          <img src="img/edit.png" width="17" height="auto">
+          <p>Edit Listing</p>
+          <span>></span>
+        </a>
+        <a href="#" class="sub-menu-link">
+          <img src="img/delete.png" width="17" height="auto">
+          <p>Remove Listing</p>
+          <span>></span>
+        </a>
+        <a href="#" class="sub-menu-link">
+          <img src="img/logout.png" width="17" height="auto">
+          <p>Log Out</p>
+          <span>></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+      subMenu.classList.toggle("open-menu");
+    }
+
+  </script>
+</section>
+<style> .popup{
+  padding-top: 2%;
+  padding-bottom: 43%;
+  margin-left: 5%;
+}
+.popup a:hover{
+  transition: 0.4s;
+  text-decoration: underline #B76E79;
+}
+</style>
+<div class="popup">
+  <h1>Sign Up</h1>
+  <p>Sign Up Sucessful You can now <a href="/MainProgram/loginFormFolder/login.php">Log In</a>.</p>
+<!--  to edit the login button-->
+</div>
+
+
+  <footer>
+    <div class="contact-details">
+      <p class="footer-titles">Contact Details</p>
+      <div class="additional-info">
+        <p><b class="bold-customer-txt">Customer Support:</b> 029 123 1234</p>
+        <p><b class="bold-customer-txt">Registered Address:</b> 123 Cardiff Road</p>
+        <p><b class="bold-customer-txt">Email:</b> Caravan.io@gmail.com</p>
+      </div>
+    </div>
+    <div class="credits">
+      <span class="credsName"> by Timofei.B(2024)</span>
+    </div>
+    <div class="social-media-block">
+
+      <div class="social-media-info">
+        <p class="footer-titles"><span class="underline">Social Media </span></p>
+
+
+        <a class ="social-links"href="https://www.facebook.com/">Facebook</a>
+
+        <a class ="social-links" href="https://www.instagram.com">Instagram</a>
+
+        <a class ="social-links" href="https://twitter.com/i/flow/login">Twitter</a>
+
+      </div>
+
+    </div>
+    </div>
+
+  </footer>
+</body>
+</html>
